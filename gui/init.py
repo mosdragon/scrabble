@@ -9,10 +9,8 @@ class App:
         frame = Frame(master)
         frame.pack()
 
-        self.button = Button(
-            frame, text="QUIT", fg="red", command=frame.quit
-            )
-        self.button.pack(side=LEFT)
+        score = Label(master, text="Score: ", anchor=NE)
+        score.pack(side=RIGHT)
 
         self.hi_there = Button(frame, text="Hello", command=self.say_hi)
         self.hi_there.pack(side=LEFT)
